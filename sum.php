@@ -5,36 +5,33 @@ function twice_number ($number){
     $result=$number*2;
     return $result;
 }
-echo twice_number(5);
+echo twice_number(5) . PHP_EOL;
 
 //2番
 function add($a,$b){
     $result=$a+$b;
-    return$result;
+    return $result;
 }
-echo add(2,4);
+echo add(2,4) . PHP_EOL;
 
 //3番
-/*
+
 function multiplication($arr){
-    $result=0;
-    $arr=array(1,3,5,7,9);
+    $result=1;
+    
     for($i=0; $i<count($arr); $i++){
-    echo
+        $result = $result * $arr[$i];
+    }
+    return $result;
 }
- echo multiplication
- */
- 
- /*
- $arr=array(1,3,5,7,9);
- $result=arry_product($arr);
- var_dump($result);
- */
+   echo multiplication(array(1,3,5,7,9)) . PHP_EOL;
+   
+
  
 
 
 //4番
-/*
+
 function max_array($arr){
   // とりあえず配列の最初の要素を一番大きい値とする
   $max_number = $arr[0];
@@ -46,17 +43,19 @@ function max_array($arr){
 
   return $max_number;
 }
-*/
+
+
 
 
 //５番
 //strip_tags
-/*
-$str='<h1>strip_tags関数</h1>'
-echo strip_tags($text);
- */
+$str='<p>strip_tags関数</p>';
+echo strip_tags ($str);
+echo "\n";
+
  
 //array_push
+
 $fruit = array("orange", "banana");
 array_push($fruit, "apple", "raspberry");
 print_r($fruit);
